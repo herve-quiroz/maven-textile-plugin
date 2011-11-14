@@ -1,0 +1,18 @@
+h1. Maven Textile plugin
+
+h2. Purpose
+
+TODO
+
+h2. How to use
+
+TODO
+
+
+h2. Future plans
+
+TODO
+
+h2. How to contribute
+
+TODO
