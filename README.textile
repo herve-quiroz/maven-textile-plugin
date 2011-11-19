@@ -16,3 +16,9 @@ TODO
 h2. How to contribute
 
 TODO
+
+h2. TODO
+
+* asciidoc support
+* comments (textile 2.2)
+
