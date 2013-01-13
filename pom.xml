@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>org.trancecode</groupId>
     <artifactId>trancecode</artifactId>
-    <version>11</version>
+    <version>17</version>
   </parent>
 
   <groupId>org.trancecode.maven.plugins</groupId>
   <artifactId>maven-textile-plugin</artifactId>
   <version>1.1.0-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
-  <name>${project.artifactId}</name>
   <description>Maven plugin to format Textile documents</description>
-
-  <!-- ===================================================================== -->
 
   <inceptionYear>2011</inceptionYear>
 
@@ -39,18 +37,16 @@
     <url>https://bitbucket.org/hquiroz/maven-textile-plugin</url>
   </scm>
 
-  <!-- ===================================================================== -->
-
   <repositories>
-
     <repository>
       <id>releases.trancecode.org</id>
       <url>http://maven.trancecode.org/releases/</url>
     </repository>
-
   </repositories>
 
-  <!-- ===================================================================== -->
+  <properties>
+    <verify.findbugs.skip>true</verify.findbugs.skip>
+  </properties>
 
   <dependencies>
 
@@ -64,23 +60,16 @@
       <groupId>org.apache.maven</groupId>
       <artifactId>maven-plugin-api</artifactId>
       <version>3.0.3</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.codehaus.plexus</groupId>
+      <artifactId>plexus-utils</artifactId>
+      <version>2.0.6</version>
+      <scope>provided</scope>
     </dependency>
 
   </dependencies>
-
-  <!-- ===================================================================== -->
-
-  <build>
-    <plugins>
-
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-source-plugin</artifactId>
-      </plugin>
-
-    </plugins>
-  </build>
-
-  <!-- ===================================================================== -->
 
 </project>
